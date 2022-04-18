@@ -9,7 +9,7 @@ Sends you a customized email every morning, with information of interest, such a
 Create a copy of this [template repo](https://github.com/prof-rossetti/daily-briefings-py), then clone or download your new repo onto your local computer (for example to the Desktop), and navigate there from the command-line:
 
 ```sh
-cd ~/Desktop/daily-briefings-py/
+cd ~/Desktop/webservice/
 ```
 
 Use Anaconda to create and activate a new virtual environment, perhaps called "briefings-env":

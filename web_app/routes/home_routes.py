@@ -14,3 +14,12 @@ def about():
     print("ABOUT...")
     return "About Me"
     #return render_template("about.html")
+
+@home_routes.route("/hello")
+def hello_world():
+    print("HELLO...", dict(request.args))
+    
+    name = request.args.get("name") or "World"
+    
+    message = f"Hello, {name}!"
+    return message
