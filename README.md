@@ -25,6 +25,17 @@ Then, within an active virtual environment, install package dependencies:
 pip install -r requirements.txt
 ```
 
+### Running Locally
+
+```sh
+# Mac:
+FLASK_APP=web_app flask run
+
+# Windows:
+export FLASK_APP=web_app # first time, to set the env var
+flask run # subsequent times
+```
+
 ## Configuration
 
 Follow these [SendGrid setup instructions](https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/packages/sendgrid.md#setup) to sign up for a SendGrid account, configure your account's email address (i.e. `SENDER_EMAIL_ADDRESS`), and obtain an API key (i.e. `SENDGRID_API_KEY`).
@@ -72,6 +83,7 @@ python -m app.daily_briefing
 # in production mode:
 APP_ENV="production" COUNTRY_CODE="US" ZIP_CODE="20057" python -m app.daily_briefing
 ```
+
 
 
 ## Testing
